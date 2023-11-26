@@ -99,7 +99,7 @@ resource "azurerm_linux_virtual_machine" "example" {
     destination = "/home/adminuser/script.sh"
  
  }
- provisioner "remote-exec" {
+ provisioner "remote-exec"  {
     
     inline = [
       "ls -lh",
